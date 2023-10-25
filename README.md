@@ -1,2 +1,4 @@
 # 2023-2_RPG_Segundo-Semestre
-Trabalho Prático da disciplina de PDS2 da Universidade Federal de Minas Gerais, baseado em um jogo de RPG de turnos em C++.
+
+## *Sobre o projeto*
+Embarque em uma emocionante aventura acadêmica no coração da UFMG com nosso novo jogo de RPG, onde você assume o papel de um estudante de Engenharia de Controle e Automação no segundo semestre. Em sua jornada, você enfrentará desafios únicos e intensos em cada disciplina, superando obstáculos e provas rigorosas. Mas cuidado! Os professores, transformados em poderosos inimigos, estão prontos para testar suas habilidades e determinação. Será que você tem o que é preciso para conquistar o NSG perfeito e se tornar um mestre em Engenharia de Controle e Automação? Desvie de 'passadinhas no DA' e evite 'trancamentos de curso' para manter sua jornada nos trilhos. Com gráficos envolventes, uma trama cativante e desafios reais, este jogo é a combinação perfeita de diversão e aprendizado. Prepare-se para a batalha, afie suas habilidades e prove que você é digno de se tornar uma lenda na UFMG!
