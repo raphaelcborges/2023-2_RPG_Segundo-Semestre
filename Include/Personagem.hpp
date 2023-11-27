@@ -1,6 +1,9 @@
 #ifndef PERSONAGEM_HPP
 #define PERSONAGEM_HPP
 #include <iostream>
+#include "Item.hpp"
+#include <vector>
+
 using namespace std;
 
 class Personagem {
@@ -9,6 +12,7 @@ class Personagem {
     int _vida_maxima = 100;
     int _ataque1 = 27;
     int _ataque2 = 25;
+    std::vector<Item> inventario;
 
 public:
     Personagem(string nome);
@@ -17,6 +21,10 @@ public:
     bool estaVivo();
     void definirNome(string nome);
     string getNome();
+    void addItem(Item item);
+    void usarItem(int indiceItem);
+    std::vector<Item>& getInventario();
+    void exibirInventario();
     void printInfo();
     int getVida();
 };
