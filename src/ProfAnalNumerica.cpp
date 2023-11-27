@@ -1,23 +1,23 @@
-#include "ProfessorAnaliseNum.hpp"
+#include "ProfAnalNumerica.hpp"
 
-ProfessorAnaliseNum::ProfessorAnaliseNum(string nome) : OInimigo(nome) {
+ProfAnalNumerica::ProfAnalNumerica(string nome) : Inimigo(nome) {
     this->_vida = 50;
     this->_ataque = 15;
 }
 
-int ProfessorAnaliseNum::ataca() {
+int ProfAnalNumerica::ataca() {
     return _ataque;
 }
 
-void ProfessorAnaliseNum::falar() {
+void ProfAnalNumerica::falar() {
     int fala = numeroAleatorio();
     if (fala == 1) {
-        cout << "Interpolação!\n" << endl;
+        cout << "Matrizes!\n" << endl;
     }
     else if (fala == 2) {
-        cout << "Lagrange!\n" << endl;
+        cout << "Interpolação\n" << endl;
     }
     else {
-        cout << "Ajuste de Curvas!\n" << endl;
-    }
+        cout << "Pégaso!\n" << endl;
+    }
 }
