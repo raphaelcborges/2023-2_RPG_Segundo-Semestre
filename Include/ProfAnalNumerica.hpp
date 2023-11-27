@@ -1,13 +1,15 @@
-#ifndef PROFESSORANALISENUM_HPP
-#define PROFESSORANALISENUM_HPP
+#ifndef PROFANALNUMERICA_HPP
+#define PROFANALNUMERICA_HPP
 
-#include "OInimigo.hpp"
+#include "Inimigo.hpp"
+#include <iostream>
 
-class ProfessorAnaliseNum : public OInimigo {
+class ProfAnalNumerica : public Inimigo {
+    int _ataque;
 public:
-    ProfessorAnaliseNum(string nome);
+    ProfAnalNumerica(string nome);
     int ataca() override;
     void falar() override;
 };
 
-#endif
+#endif 
