@@ -1,42 +1,19 @@
-#include <iostream>
-#include "Batalha.hpp"
+Batalha.hpp
+#ifndef BATALHA_HPP
+#define BATALHA_HPP
 
-Batalha::Batalha(Personagem* personagem, Inimigo* inimigo) : personagem(personagem), inimigo(inimigo) {}
+#include "Personagem.hpp"
+#include "Inimigo.hpp"
 
-void Batalha::executaTurno(int escolha) {
-    int dano = personagem->ataca(escolha);
-    inimigo->recebeDano(dano);
-    std::cout << "Voce foi um bom aluno e a aula do professor ficou " << dano << " vezes mais facil !\n" << std::endl;
+class Batalha {
+    Personagem* personagem;
+    Inimigo* inimigo;
 
-    if (!inimigo->estaVivo()) {
-        personagem->printInfo();
-        inimigo->printInfo();
-        std::cout << "Voce passou nessa materia!\n" << std::endl;
-        return;
-    }
+public:
+    Batalha(Personagem* personagem, Inimigo* inimigo);
+    void executaTurno(int escolha);
+    bool terminou();
+    void executaTurnoInimigo();
+};
 
-    dano = inimigo->ataca();
-    inimigo->falar();
-    personagem->recebeDano(dano);
-    std::cout << "Mas o professor nao facilitou e voce perdeu " << dano << " de NSG!\n" << std::endl;
-
-    if (!personagem->estaVivo()) {
-        personagem->printInfo();
-        inimigo->printInfo();
-    }
-}
-
-bool Batalha::terminou() {
-    return !personagem->estaVivo() || !inimigo->estaVivo();
-}
-
-void Batalha::executaTurnoInimigo() {
-    if (!personagem->estaVivo() || !inimigo->estaVivo()) {
-        return;
-    }
-
-    int ataqueInimigo = inimigo->ataca();
-    personagem->recebeDano(ataqueInimigo);
-    inimigo->falar();
-    std::cout << "O professor nao foi legal e voce perdeu " << ataqueInimigo << " de NSG" << std::endl;
-}
+#endif
