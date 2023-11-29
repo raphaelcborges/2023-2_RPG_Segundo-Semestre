@@ -1,15 +1,16 @@
-#ifndef PROFESSORPDS_HPP   
-#define PROFESSORPDS_HPP
+#ifndef PROFPDS_HPP
+#define PROFPDS_HPP
 
-#include "OInimigo.hpp"   
+#include "Inimigo.hpp"
 #include <iostream>
 
-class ProfessorPDS : public OInimigo {
+
+class ProfPDS2: public Inimigo {
     int _ataque;
 public:
-    ProfessorPDS(string nome);
+    ProfPDS2(string nome);
     int ataca() override;
     void falar() override;
 };
 
-#endif
+#endif 
