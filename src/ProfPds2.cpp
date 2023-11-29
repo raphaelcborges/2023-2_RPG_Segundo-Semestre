@@ -1,15 +1,15 @@
-#include "ProfessorPDS.hpp"
+#include "ProfPds2.hpp"
 
-ProfessorPDS::ProfessorPDS(string nome) : Inimigo(nome) {
+ProfPDS2::ProfPDS2(string nome) : Inimigo(nome) {
     this->_vida = 60;
     this->_ataque = 8;
 }
 
-int ProfessorPDS::ataca() {
+int ProfPDS2::ataca() {
     return _ataque;
 }
 
-void ProfessorPDS::falar() {
+void ProfPDS2::falar() {
     int fala = numeroAleatorio();
     if (fala == 1) {
         cout << "C++!\n" << endl;
