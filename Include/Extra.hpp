@@ -1,3 +1,14 @@
+/**
+ * @file Extra.hpp
+ * @author grupo
+ * @brief Arquivo de auxílio ao main
+ * @version 0.1
+ * @date 2023-12-04
+ * @details Arquivo auxiliar para imprimir diferentes tipos de mensagens para o jogo
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 Batalha.hpp
 #ifndef EXTRA_HPP
 #define EXTRA_HPP
