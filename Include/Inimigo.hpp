@@ -1,3 +1,15 @@
+/**
+ * @file Inimigo.hpp
+ * @author grupo
+ * @brief Arquivo de cabeçalho para a classe Inimigo
+ * @version 0.1
+ * @date 2023-12-04
+ * @details Este arquivo contém as declarações para a classe Inimigo, que representa um inimigo genérico em um jogo. 
+ * A classe Inimigo é abstrata, ou seja, não pode ser instanciada diretamente.
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 #ifndef INIMIGO_HPP
 #define INIMIGO_HPP
 
