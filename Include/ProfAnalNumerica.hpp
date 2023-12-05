@@ -1,7 +1,7 @@
 /**
  * @file ProfAnalNumerica.hpp
  * @author grupo
- * @brief Arquivo de cabeçalho para a classe ProfGaal
+ * @brief Arquivo de cabeçalho para a classe ProfAnalNumerica
  * @version 0.1
  * @date 2023-12-04
  * @details Este arquivo contém a declaração da classe ProfAnalNumerica, que é uma subclasse da classe Inimigo e representa um inimigo específico no jogo.
