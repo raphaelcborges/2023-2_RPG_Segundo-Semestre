@@ -45,12 +45,7 @@ Para gerar a documentação, utilizar:
 ```bash
 $ doxygen Doxyfile
 ```
-## *Remover arquivos auxiliares*
-Para remover arquivos auxiliares, execute o seguinte comando:
-```bash
-$ make clean
 
-```
 
 
 
