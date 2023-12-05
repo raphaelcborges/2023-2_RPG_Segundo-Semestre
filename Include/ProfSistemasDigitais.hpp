@@ -1,3 +1,4 @@
+
 #ifndef ProfSD_HPP
 #define ProfSD_HPP
 
@@ -8,9 +9,9 @@
  * @brief Classe que representa um Inimigo do tipo "Professor de Sistemas Digitais".
  * Herda da classe Inimigo.
  */
+
 class ProfSD : public Inimigo {
     int _ataque; /**< Valor do ataque do Professor de Sistemas Digitais. */
-
 public:
     /**
      * @brief Construtor da classe ProfSD.
@@ -30,4 +31,4 @@ public:
     void falar() override;
 };
 
-#endif
+#endif 
