@@ -18,7 +18,8 @@
 using namespace std;
 
 /**
- * @brief Classe base para Inimigos.
+ * @brief Classe abstrata representando um inimigo genérico.
+ * @details Esta classe contém atributos e métodos que todos os inimigos do jogo devem ter.
  */
 class Inimigo {
 protected:
@@ -30,53 +31,72 @@ public:
 
     /**
      * @brief Construtor da classe Inimigo.
-     * @param nome Nome do Inimigo.
+     * @details Este construtor inicializa um objeto Inimigo com um nome fornecido, vida e ataque são 
+     * inicializados com valores padrão.
+     * 
+     * @param nome 
      */
     Inimigo (string nome);
 
     /**
-     * @brief Função para reduzir a vida do Inimigo.
-     * @param dano Valor do dano a ser aplicado.
+     * @brief Reduz a vida do inimigo por uma quantidade determinada de dano. 
+     * @details Este método recebe um inteiro representando o dano e subtrai da vida do inimigo.
+     * 
+     * @param dano A quantidade de dano a ser subtraída das vidas do inimigo.
+     * @return * void 
      */
     void recebeDano(int dano);
 
     /**
-     * @brief Verifica se o Inimigo está vivo.
-     * @return true se estiver vivo, false caso contrário.
+     * @brief Verifica se o inimigo está vivo.
+     * @details Este método retorna um valor booleano indicando se o inimigo está vivo (ou seja, tem vida maior que 0).
+     * 
+     * @return true
+     * @return false
      */
     bool estaVivo();
 
     /**
-     * @brief Imprime o nome do Personagem e o NSG.
+     * @brief Imprime as informações do inimigo.
+     * @details Este método imprime o nome, a vida e o poder de ataque do inimigo na saída padrão.
      */
     void printInfo();
 
     /**
-     * @brief Retorna o ataque do Inimigo.
-     * @return Valor do ataque.
+     * @brief Retorna o poder de ataque do inimigo.
+     * @details Este método é um getter para o atributo _ataque
+     * 
+     * @return int 
      */
     int getAtaque();
 
     /**
-     * @brief Retorna o nome do Inimigo.
-     * @return Nome do Inimigo.
+     * @brief Retorna o nome do inimigo.
+     * @details Este método é um getter para o atributo _nome.
+     * 
+     * @return string 
      */
     string getNome();
 
     /**
-     * @brief Função puramente virtual para o ataque do Inimigo.
-     * @return Valor do ataque.
+     * @brief Método abstrato para a ação de ataque do inimigo.
+     * @details Este método deve ser implementado pelas classes derivadas. Ele deve retornar a quantidade de dano causada pelo ataque do inimigo.
+     * 
+     * @return int 
      */
     virtual int ataca() = 0;
 
     /**
-     * @brief Função puramente virtual para a fala do Inimigo.
+     * @brief Método abstrato para a ação de diálogo do inimigo.
+     * @details Este método deve ser implementado pelas classes derivadas. Ele deve imprimir alguma forma de mensagem.
      */
     virtual void falar() = 0;
 
-    /**
-     * @brief Função para gerar número aleatório de 1 a 3.
-     * @return Número aleatório.
+      /**
+     * @brief Gera um número aleatório entre 1 e 3.
+     * @details Este método gera um numero aleatorio para escolher qual das falas o inimigo irá falar quando for atacar.
+     * 
+     * @return int 
      */
     int numeroAleatorio();
 };
