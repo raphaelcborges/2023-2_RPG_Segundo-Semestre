@@ -1,11 +1,11 @@
-
+Batalha.hpp
 #ifndef EXTRA_HPP
 #define EXTRA_HPP
 
 #include <iostream>
 
 namespace ext {
-    /**
+/**
      * @brief Função para exibir mensagem inicial.
      */
 	void iniciar() { 	
@@ -29,26 +29,30 @@ namespace ext {
 
 		std::cout << "--------------SEGUNDO SEMESTRE --------------\n" << endl;
 	}
-    /**
+
+     /**
      * @brief Função para exibir créditos do grupo.
      */
 
 	void creditos() {
+
 		std::cout << "\nGRUPO:\nFernanda Vaz\nRaphael Borges\nKayque Borges\n" << endl;
 		std::cout << "PROFESSOR: Thiago Noronha\n" << endl;
 	}
-    /**
+     /**
      * @brief Função para exibir mensagem de reprovação.
      */
+
 	void reprovacao() {
 		std::cout << "Que pena! parece que voce reprovou nessa materia...";
 		std::cout << "Infelizmente isso te desmotivou muito e voce acabou trancando o semestre, tente de novo no proximo!\n" << endl;
 		exit(0);
 	}
-
-    /**
+     
+     /**
      * @brief Função para imprimir nota A.
      */
+
 	void print_a() {
 		std::cout << R"(
  .----------------. 
@@ -63,7 +67,8 @@ namespace ext {
 | '--------------' |
  '----------------' )" << std::endl;
 	}
-    /**
+
+     /**
      * @brief Função para imprimir nota B.
      */
 	void print_b() {
@@ -82,9 +87,10 @@ namespace ext {
 )" << std::endl;
 
 	}
-    /**
+     /**
      * @brief Função para imprimir nota C.
      */
+
 	void print_c() {
 		std::cout << R"(
 
@@ -103,7 +109,7 @@ namespace ext {
 )" << std::endl;
 
 	}
-    /**
+     /**
      * @brief Função para imprimir nota D.
      */
 	void print_d() {
