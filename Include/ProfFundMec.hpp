@@ -1,4 +1,14 @@
-
+/**
+ * @file ProfFundMec.hpp
+ * @author grupo
+ * @brief Arquivo de cabeçalho para a classe ProfFundMec
+ * @version 0.1
+ * @date 2023-12-04
+ * @details Este arquivo contém a declaração da classe ProfFundMec, que é uma subclasse da classe Inimigo e representa um inimigo específico no jogo.
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 #ifndef PROFFUNDMEC_HPP
 #define PROFFUNDMEC_HPP
 
