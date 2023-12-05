@@ -1,4 +1,5 @@
 # 2023-2_RPG_Segundo-Semestre
+  [![NPM](https://img.shields.io/npm/l/react)](https:// https://github.com/raphaelcborges/2023-2_RPG_Segundo-Semestre/blob/main/LICENSE)
 
 <div align="center">
 <img src="https://github.com/raphaelcborges/2023-2_RPG_Segundo-Semestre/assets/129281871/239b656c-314d-47d5-a978-d11c46da573e"
