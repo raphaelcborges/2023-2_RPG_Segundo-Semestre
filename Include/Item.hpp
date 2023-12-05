@@ -1,3 +1,15 @@
+/**
+ * @file Item.hpp
+ * @author grupo
+ * @brief Arquivo de cabeçalho para a classe Item
+ * @version 0.1
+ * @date 2023-12-04
+ * @details Este arquivo contém a declaração da classe Item, que representa um item que pode ser usado no jogo. 
+ * Cada item possui um nome e um valor de regeneração.
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 #ifndef ITEM_HPP
 #define ITEM_HPP
 #pragma once
