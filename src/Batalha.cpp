@@ -1,4 +1,3 @@
-Batalha.hpp
 #ifndef BATALHA_HPP
 #define BATALHA_HPP
 
