@@ -250,7 +250,7 @@ int main() {
             break;
         }
         case 3: {
-            std::cout << "Ja no primeiro semestre? ok, nao vou te impedir, adeus!\n" << std::endl;
+            std::cout << "Ja no segundo semestre? ok, nao vou te impedir, adeus!\n" << std::endl;
             sairDoJogo = true;
             break;
         }
