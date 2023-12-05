@@ -1,5 +1,6 @@
 #ifndef ITEM_HPP
 #define ITEM_HPP
+#pragma once
 
 #include <string>
 
@@ -14,13 +15,11 @@ public:
      * @param valorDeRegeneracao Valor de regeneração de vida/NSG.
      */
     Item(std::string nome, int valorDeRegeneracao);
-
     /**
      * @brief Retorna o nome do Item.
      * @return Nome do Item.
      */
     std::string getNome();
-
     /**
      * @brief Retorna o valor de regeneração do Item.
      * @return Valor de regeneração.
@@ -28,8 +27,8 @@ public:
     int getValorDeRegeneracao();
 
 private:
-    std::string nome; /**< Nome do Item. */
-    int valorDeRegeneracao; /**< Valor de regeneração de vida/NSG do Item. */
+    std::string nome;/**< Nome do Item. */
+    int valorDeRegeneracao;/**< Valor de regeneração de vida/NSG do Item. */
 };
 
 #endif
