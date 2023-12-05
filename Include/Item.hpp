@@ -17,24 +17,35 @@
 #include <string>
 
 /**
- * @brief Classe para representar um Item.
+ * @brief Classe que representa um item no jogo
+ * @details A classe Item representa um item no jogo que pode ser usado pelo jogador. Cada item possui um nome 
+ * e um valor de regeneração que indica quanto de vida pode ser restaurado ao usar o item.
  */
 class Item {
 public:
     /**
      * @brief Construtor da classe Item.
-     * @param nome Nome do Item.
-     * @param valorDeRegeneracao Valor de regeneração de vida/NSG.
+     * @details Este construtor inicializa um objeto Item com um nome e um valor de regeneração fornecidos. 
+     * O nome identifica o item e o valor de regeneração indica a quantidade de vida que pode ser restaurada 
+     * ao usar o item.
+     * 
+     * @param nome 
+     * @param valorDeRegeneracao 
      */
     Item(std::string nome, int valorDeRegeneracao);
     /**
-     * @brief Retorna o nome do Item.
-     * @return Nome do Item.
+     * @brief Retorna o nome do item
+     * @details Este método retorna o nome do item que é uma string.
+     * 
+     * @return std::string 
      */
     std::string getNome();
     /**
-     * @brief Retorna o valor de regeneração do Item.
-     * @return Valor de regeneração.
+     * @brief Retorna o valor de regeneração do item
+     * @details Este método retorna o valor de regeneração do item que é um inteiro representando a quantidade 
+     * de vida que pode ser restaurada ao usar o item.
+     * 
+     * @return int 
      */
     int getValorDeRegeneracao();
 
