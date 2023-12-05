@@ -1,4 +1,15 @@
-#ifndef PERSONAGEM_HPP
+/**
+ * @file Personagem.hpp
+ * @author grupo
+ * @brief Arquivo de cabeçalho para a classe Personagem
+ * @version 0.1
+ * @date 2023-12-04
+ * @details Este arquivo contém a declaração da classe Personagem, que é usada para representar um personagem
+ *  controlado pelo jogador no jogo.
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */#ifndef PERSONAGEM_HPP
 #define PERSONAGEM_HPP
 #include <iostream>
 #include "Item.hpp"
