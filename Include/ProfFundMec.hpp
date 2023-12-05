@@ -1,3 +1,4 @@
+
 #ifndef PROFFUNDMEC_HPP
 #define PROFFUNDMEC_HPP
 
@@ -8,16 +9,16 @@
  * @brief Classe que representa um Inimigo do tipo "Professor de Fundamentos Mecânicos".
  * Herda da classe Inimigo.
  */
-class ProfFundMec : public Inimigo {
-    int _ataque; /**< Valor do ataque do Professor de Fundamentos Mecânicos. */
 
+class ProfFundMec : public Inimigo {
+    int _ataque;/**< Valor do ataque do Professor de Fundamentos Mecânicos. */
 public:
     /**
      * @brief Construtor da classe ProfFundMec.
      * @param nome Nome do Professor de Fundamentos Mecânicos.
      */
-    ProfFundMec(string nome);
 
+    ProfFundMec(string nome);
     /**
      * @brief Função que representa o ataque do Professor de Fundamentos Mecânicos.
      * @return Valor do ataque.
@@ -30,4 +31,4 @@ public:
     void falar() override;
 };
 
-#endif
+#endif 
