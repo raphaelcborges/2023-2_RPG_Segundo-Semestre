@@ -9,7 +9,8 @@
  * 
  * @copyright Copyright (c) 2023
  * 
- */#ifndef PERSONAGEM_HPP
+ */
+#ifndef PERSONAGEM_HPP
 #define PERSONAGEM_HPP
 #include <iostream>
 #include "Item.hpp"
