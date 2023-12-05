@@ -25,7 +25,7 @@ Esse projeto utiliza as seguintes linguagem, ferramentas e bibliotecas:
   
 </table>
 
-## *Compilação*
+## *Compilação* *(A compilação do programa via Makefile foi feito em ambiente Windows)*
 Para realizar a compilação do programa execute o seguinte comando:
 ```bash
 $ make
