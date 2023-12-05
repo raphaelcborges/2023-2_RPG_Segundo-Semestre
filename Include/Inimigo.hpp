@@ -3,21 +3,24 @@
 
 #include <iostream>
 
+using namespace std;
+
 /**
  * @brief Classe base para Inimigos.
  */
 class Inimigo {
 protected:
-    std::string _nome; /**< Nome do Inimigo. */
-    int _vida; /**< Vida do Inimigo. */
-    int _ataque; /**< Ataque do Inimigo. */
+    string _nome;/**< Nome do Inimigo. */
+    int _vida;/**< Vida do Inimigo. */
+    int _ataque;/**< Ataque do Inimigo. */
 
 public:
+
     /**
      * @brief Construtor da classe Inimigo.
      * @param nome Nome do Inimigo.
      */
-    Inimigo(std::string nome);
+    Inimigo (string nome);
 
     /**
      * @brief Função para reduzir a vida do Inimigo.
@@ -32,7 +35,7 @@ public:
     bool estaVivo();
 
     /**
-     * @brief Imprime informações do Inimigo.
+     * @brief Imprime o nome do Personagem e o NSG.
      */
     void printInfo();
 
@@ -46,7 +49,7 @@ public:
      * @brief Retorna o nome do Inimigo.
      * @return Nome do Inimigo.
      */
-    std::string getNome();
+    string getNome();
 
     /**
      * @brief Função puramente virtual para o ataque do Inimigo.
@@ -67,4 +70,3 @@ public:
 };
 
 #endif
-
