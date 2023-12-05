@@ -1,4 +1,3 @@
-ProfFundMec.cpp
 #include "ProfFundMec.hpp"
 
 ProfFundMec::ProfFundMec(string nome) : Inimigo(nome) {
