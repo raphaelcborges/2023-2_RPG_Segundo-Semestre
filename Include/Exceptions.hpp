@@ -1,3 +1,15 @@
+/**
+ * @file Exceptions.hpp
+ * @author grupo
+ * @brief Arquivo de cabeçalho para as classes de exceções personalizadas
+ * @version 0.1
+ * @date 2023-12-04
+ * @details Este arquivo define classes para exceções personalizadas que são lançadas quando
+ * ocorrem certos tipos de erros no programa.
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 Batalha.hpp
 #include <exception>
 
